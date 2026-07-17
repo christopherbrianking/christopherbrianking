@@ -132,9 +132,17 @@
                 <a href="https://instagram.com/christopherbrianking" target="_blank" title="Instagram">
                     Instagram
                 </a>
-		<a href="mailto:mail@christopherbrianking.com" title="Email">
+		<a id="email-link" title="Email">
 			Email
 		</a>
+
+<script>
+    var user = "mail";
+    var domain = "christopherbrianking.com";
+    var element = document.getElementById('email-link');
+    element.href = "mailto:" + user + "@" + domain;
+</script>
+
             </div>
         </main>
 
@@ -144,7 +152,7 @@
 
     <!-- Site Footer -->
     <footer>
-        <!--<p>&copy; 2026 Christopher Brian King. All rights reserved.</p>-->
+ 
     </footer>
 
 </body>
