@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher Brian King | Design & Illustration</title>
+    <title>Christopher Brian King | Graphic Designer & Illustrator</title>
+    <!-- Public Font Awesome CDN for Vector Graphic Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         /* Minimalist Reset & Layout System */
         * {
@@ -15,133 +17,99 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: #ffffff;
             color: #111111;
-            padding: 40px 20px;
-            max-width: 1100px;
+            padding: 60px 20px;
+            max-width: 800px;
             margin: 0 auto;
+            line-height: 1.6;
         }
 
-        /* Replicating Your Header Section */
+        /* Fixed Header Structure */
         header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 60px;
-            flex-wrap: wrap;
-            gap: 20px;
+            margin-bottom: 80px;
         }
         .logo a {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
             text-decoration: none;
             color: #111111;
             letter-spacing: -0.5px;
         }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 24px;
+
+        /* Bio Text Presentation Box */
+        .content-container {
+            max-width: 580px;
+            margin-bottom: 50px;
         }
-        nav a {
-            text-decoration: none;
+        .bio-text {
+            font-size: 1.15rem;
+            color: #222222;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        /* Graphic Icons Navigation */
+        .icon-links {
+            display: flex;
+            gap: 28px;
+            margin-top: 40px;
+        }
+        .icon-links a {
             color: #666666;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-        nav a:hover, nav a.active {
-            color: #111111;
-        }
-
-        /* Clean Portfolio Grid */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-        .portfolio-item {
-            background-color: #f9f9f9;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            aspect-ratio: 3 / 4; /* Keeps cover formats looking uniform */
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: opacity 0.3s ease;
-        }
-        .portfolio-item img:hover {
-            opacity: 0.9;
-        }
-
-        /* Footer Context */
-        footer {
-            border-top: 1px solid #eeeeee;
-            padding-top: 30px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #888888;
-        }
-        footer a {
-            color: #111111;
+            font-size: 1.6rem; /* Adjusts icon size */
+            transition: color 0.2s ease, transform 0.2s ease;
             text-decoration: none;
-            font-weight: 500;
+            display: inline-block;
         }
-        footer a:hover {
-            text-decoration: underline;
+        .icon-links a:hover {
+            color: #000000;
+            transform: translateY(-2px);
+        }
+
+        /* Footer System */
+        footer {
+            margin-top: 100px;
+            border-top: 1px solid #eeeeee;
+            padding-top: 24px;
+            font-size: 0.85rem;
+            color: #999999;
         }
     </style>
 </head>
 <body>
 
-    <!-- Site Header -->
+    <!-- Header Section -->
     <header>
         <div class="logo">
             <a href="#">Christopher Brian King</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Design</a></li>
-                <li><a href="https://www.instagram.com/christopherbrianking/" target="_blank">Instagram</a></li>
-                <li><a href="mailto:christopherbrianking@gmail.com">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Simplified Grid Showcase -->
-    <main class="portfolio-grid">
-        <!-- Item 1 -->
-        <div class="portfolio-item">
-            <img src="thewaytothespring.jpg" alt="The Way to the Spring Book Cover">
-        </div>
-        <!-- Item 2 -->
-        <div class="portfolio-item">
-            <img src="Places and Names.jpg" alt="Places and Names Book Cover">
-        </div>
-        <!-- Item 3 -->
-        <div class="portfolio-item">
-            <img src="thefirstlovestory.jpg" alt="The First Love Story Book Cover">
-        </div>
-        <!-- Item 4 -->
-        <div class="portfolio-item">
-            <img src="The+Heart+of+a+Dog.jpg" alt="The Heart of a Dog Book Cover">
-        </div>
-        <!-- Item 5 -->
-        <div class="portfolio-item">
-            <img src="The+Sea+Inside.jpg" alt="The Sea Inside Book Cover">
-        </div>
-        <!-- Item 6 -->
-        <div class="portfolio-item">
-            <img src="Thirst.jpg" alt="Thirst Book Cover">
+    <!-- Main Profile Content Section -->
+    <main class="content-container">
+        <p class="bio-text">
+            Christopher Brian King is a graphic designer, art director, and illustrator based in Brooklyn, New York. His book cover designs and illustrations have been featured in the 50 Books/50 Covers exhibition and celebrated across numerous industry publications.
+        </p>
+        <p class="bio-text">
+            In addition to his studio practice, he has taught book cover design at Parsons The New School for Design.
+        </p>
+
+        <!-- Graphic Icons List -->
+        <div class="icon-links">
+            <a href="https://instagram.com" target="_blank" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:christopherbrianking@gmail.com" title="Email Contact">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
         </div>
     </main>
 
-    <!-- Footer Area -->
+    <!-- Site Footer -->
     <footer>
-        <p>&copy; 2026 Christopher Brian King. Follow on <a href="https://www.instagram.com/christopherbrianking/" target="_blank">Instagram</a>.</p>
+        <p>&copy; 2026 Christopher Brian King. All rights reserved.</p>
     </footer>
 
 </body>
