@@ -1,238 +1,115 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Personal Site</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        /* Profile Card Layout */
+        .container {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Profile Image */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #e9ecef;
+        }
+        /* Typography */
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .bio {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #495057;
+            margin-bottom: 30px;
+        }
+        /* Buttons/Links */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            display: block;
+            padding: 14px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        .btn:hover {
+            background-color: #333333;
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            background-color: #f1f3f5;
+            color: #495057;
+        }
+        .btn-secondary:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Your Name | Personal Site</title>\
-    <style>\
-        /* Reset and Base Styles */\
-        * \{\
-            margin: 0;\
-            padding: 0;\
-            box-sizing: border-box;\
-        \}\
-        body \{\
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;\
-            background-color: #f8f9fa;\
-            color: #212529;\
-            display: flex;\
-            justify-content: center;\
-            align-items: center;\
-            min-height: 100vh;\
-            padding: 20px;\
-        \}\
-        /* Profile Card Layout */\
-        .container \{\
-            background: #ffffff;\
-            padding: 40px 30px;\
-            border-radius: 16px;\
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);\
-            max-width: 400px;\
-            width: 100%;\
-            text-align: center;\
-        \}\
-        /* Profile Image */\
-        .profile-img \{\
-            width: 120px;\
-            height: 120px;\
-            border-radius: 50%;\
-            object-fit: cover;\
-            margin-bottom: 20px;\
-            border: 3px solid #e9ecef;\
-        \}\
-        /* Typography */\
-        h1 \{\
-            font-size: 1.8rem;\
-            font-weight: 700;\
-            margin-bottom: 8px;\
-            color: #1a1a1a;\
-        \}\
-        .subtitle \{\
-            font-size: 1rem;\
-            color: #6c757d;\
-            margin-bottom: 20px;\
-            text-transform: uppercase;\
-            letter-spacing: 1px;\
-            font-weight: 600;\
-        \}\
-        .bio \{\
-            font-size: 1rem;\
-            line-height: 1.6;\
-            color: #495057;\
-            margin-bottom: 30px;\
-        \}\
-        /* Buttons/Links */\
-        .links-container \{\
-            display: flex;\
-            flex-direction: column;\
-            gap: 12px;\
-        \}\
-        .btn \{\
-            display: block;\
-            padding: 14px;\
-            background-color: #000000;\
-            color: #ffffff;\
-            text-decoration: none;\
-            border-radius: 8px;\
-            font-weight: 500;\
-            transition: background-color 0.2s ease, transform 0.1s ease;\
-        \}\
-        .btn:hover \{\
-            background-color: #333333;\
-            transform: translateY(-1px);\
-        \}\
-        .btn-secondary \{\
-            background-color: #f1f3f5;\
-            color: #495057;\
-        \}\
-        .btn-secondary:hover \{\
-            background-color: #e9ecef;\
-        \}\
-    </style>\
-</head>\
-<body>\
-\
-    <div class="container">\
-        <!-- Replace with your own image URL or upload avatar.jpg to GitHub -->\
-        <img src="https://placeholder.com" alt="Your Name" class="profile-img">\
-        \
-        <h1>Your Name</h1>\
-        <p class="subtitle">Your Profession / Title</p>\
-        \
-        <p class="bio">\
-            Welcome to my personal corner of the internet. I am a professional based in City, specializing in my field. When I'm not working, I enjoy my hobbies.\
-        </p>\
-        \
-        <div class="links-container">\
-            <!-- Replace the # with your actual links -->\
-            <a href="mailto:your.email@example.com" class="btn">Get In Touch</a>\
-            <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn</a>\
-            <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub</a>\
-        </div>\
-    </div>\
-\
-</body>\
-</html>\
-<!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Your Name | Personal Site</title>\
-    <style>\
-        /* Reset and Base Styles */\
-        * \{\
-            margin: 0;\
-            padding: 0;\
-            box-sizing: border-box;\
-        \}\
-        body \{\
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;\
-            background-color: #f8f9fa;\
-            color: #212529;\
-            display: flex;\
-            justify-content: center;\
-            align-items: center;\
-            min-height: 100vh;\
-            padding: 20px;\
-        \}\
-        /* Profile Card Layout */\
-        .container \{\
-            background: #ffffff;\
-            padding: 40px 30px;\
-            border-radius: 16px;\
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);\
-            max-width: 400px;\
-            width: 100%;\
-            text-align: center;\
-        \}\
-        /* Profile Image */\
-        .profile-img \{\
-            width: 120px;\
-            height: 120px;\
-            border-radius: 50%;\
-            object-fit: cover;\
-            margin-bottom: 20px;\
-            border: 3px solid #e9ecef;\
-        \}\
-        /* Typography */\
-        h1 \{\
-            font-size: 1.8rem;\
-            font-weight: 700;\
-            margin-bottom: 8px;\
-            color: #1a1a1a;\
-        \}\
-        .subtitle \{\
-            font-size: 1rem;\
-            color: #6c757d;\
-            margin-bottom: 20px;\
-            text-transform: uppercase;\
-            letter-spacing: 1px;\
-            font-weight: 600;\
-        \}\
-        .bio \{\
-            font-size: 1rem;\
-            line-height: 1.6;\
-            color: #495057;\
-            margin-bottom: 30px;\
-        \}\
-        /* Buttons/Links */\
-        .links-container \{\
-            display: flex;\
-            flex-direction: column;\
-            gap: 12px;\
-        \}\
-        .btn \{\
-            display: block;\
-            padding: 14px;\
-            background-color: #000000;\
-            color: #ffffff;\
-            text-decoration: none;\
-            border-radius: 8px;\
-            font-weight: 500;\
-            transition: background-color 0.2s ease, transform 0.1s ease;\
-        \}\
-        .btn:hover \{\
-            background-color: #333333;\
-            transform: translateY(-1px);\
-        \}\
-        .btn-secondary \{\
-            background-color: #f1f3f5;\
-            color: #495057;\
-        \}\
-        .btn-secondary:hover \{\
-            background-color: #e9ecef;\
-        \}\
-    </style>\
-</head>\
-<body>\
-\
-    <div class="container">\
-        <!-- Replace with your own image URL or upload avatar.jpg to GitHub -->\
-        <img src="https://placeholder.com" alt="Your Name" class="profile-img">\
-        \
-        <h1>Your Name</h1>\
-        <p class="subtitle">Your Profession / Title</p>\
-        \
-        <p class="bio">\
-            Welcome to my personal corner of the internet. I am a professional based in City, specializing in my field. When I'm not working, I enjoy my hobbies.\
-        </p>\
-        \
-        <div class="links-container">\
-            <!-- Replace the # with your actual links -->\
-            <a href="mailto:your.email@example.com" class="btn">Get In Touch</a>\
-            <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn</a>\
-            <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub</a>\
-        </div>\
-    </div>\
-\
-</body>\
-</html>\
-}
+    <div class="container">
+        <!-- Replace with your own image URL or upload avatar.jpg to GitHub -->
+        <img src="https://placeholder.com" alt="Your Name" class="profile-img">
+        
+        <h1>Your Name</h1>
+        <p class="subtitle">Your Profession / Title</p>
+        
+        <p class="bio">
+            Welcome to my personal corner of the internet. I am a professional based in City, specializing in my field. When I'm not working, I enjoy my hobbies.
+        </p>
+        
+        <div class="links-container">
+            <!-- Replace the # with your actual links -->
+            <a href="mailto:your.email@example.com" class="btn">Get In Touch</a>
+            <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub</a>
+        </div>
+    </div>
+
+</body>
+</html>
